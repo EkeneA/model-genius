@@ -1,0 +1,301 @@
+body {
+	background-color: #FBFBFB;
+	margin: 0;
+}
+
+#container {
+	margin: 0px;
+	width: 100%;
+	/*
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: red;
+	height: 1000px;
+	*/
+}
+
+#header {
+	
+	height: 440px !important;
+	/*
+	border-style: dotted;
+	border-width: 0.5px;
+	
+
+	display: table-cell;
+	*/
+	width: 100%;
+	background-image: url("images/header.jpg");
+	background-position: center;
+	background-attachment: fixed;
+}
+.overlay{
+	background-attachment: scroll;
+	background-color:rgba(0, 0, 0, 0.5);
+	height: 99.9%;
+}
+nav{
+	height: 120px;
+}
+
+#leftHeader {
+	display: inline-block;
+	float: left;
+	/*
+	border-style: dotted;
+	border-width: 0.5px;
+	*/
+
+}
+
+#rightHeader {
+	display: inline-block;
+	float: right;
+	/*
+	border-style: dotted;
+	border-width: 0.5px;
+	*/
+}
+
+#logo {
+	margin-top: 15px;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#social {
+	padding-top: 18%;
+	padding-bottom: 5%;
+}
+
+.main1 {
+	margin-top: 0px;
+	
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0px 10px 2px rgba(0, 0, 0, 0.2);
+	background-color: white;
+	width: 100%;
+	/*
+	padding: 50%;
+	
+	border-style: dotted;
+	border-width: 1px;
+	border-color: blue;
+	*/
+}
+
+.headText {
+	font-family: Trebuchet MS;
+	font-weight: 600;
+	font-size: 1.4em;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #fbfbfb;
+	display: inline-block;
+	/*
+	 *color: #333333;
+	border-style: dotted;
+	border-width: 1px;
+	border-color: blue;
+	*/
+}
+
+.headSearch {
+	display: inline-block;
+	float: left;
+	line-height: 40px;
+	padding: 0px 10px;
+	font-family: Trebuchet MS;
+	width: 548px;
+	border-color: #FF66CC;
+	border-width: 2px;
+	border-style: solid;
+	/*
+	border-style: dotted;
+	border-width: 1px;
+	border-color: blue;
+	*/
+}
+
+.headSearch:focus {
+	outline: none;
+}
+
+
+.goButton {
+	float: left;
+	-moz-box-shadow:inset 0px 1px 0px -1px #9acc85;
+	-webkit-box-shadow:inset 0px 1px 0px -1px #9acc85;
+	box-shadow:inset 0px 1px 0px -1px #9acc85;
+	background-color: #FF66CC;
+	border:0px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:13px;
+	font-weight:bold;
+	padding:14.5px 88px;
+	text-decoration:none;
+
+	/*
+	border-style: dotted;
+	border-width: 1px;
+	border-color: blue;
+	*/
+}
+
+.search {
+	padding: 25%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: 50%;
+
+}
+
+#main2 {
+	margin-top: 15px;
+	height: 413px;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0px 10px 2px rgba(0, 0, 0, 0.19);
+	background-color: white;
+}
+
+.modelPic {
+	/*
+	border-style: dotted;
+	border-width: 1px;
+	border-color: red;
+	*/
+	margin-left: 15px;
+}
+
+.one {
+	height: 239px;
+}
+
+.two {
+	height: 239px;
+
+}
+
+.three {
+	height: 239px;
+
+}
+
+.oneClass, .twoClass {
+	/*
+	border-style: dotted;
+	border-width: 1px;
+	border-color: blue;
+	*/
+	width: 239px;
+	display: inline-block;
+	margin-right: 25px;
+	float: left;
+}
+
+.threeClass {
+	/*
+	border-style: dotted;
+	border-width: 1px;
+	border-color: blue;
+	*/
+	width: 239px;
+	display: inline-block;
+	float: left;
+
+}
+
+.titleMain2 {
+	font-family: Trebuchet MS;
+	font-weight: 600;
+	font-size: 1.1em;
+	width: 90%;
+	padding: 15px;
+	color: #333333;
+}
+
+.name {
+	background-color: rgb(240, 240, 240);
+	padding: 10px;
+	margin-top: 0;
+	font-family: Trebuchet MS;
+	font-weight: 600;
+	color: #333333;
+}
+
+.where {
+	background-color: rgb(240, 240, 240);
+	padding: 10px;
+	font-family: Trebuchet MS;
+	font-size: 0.7em;
+	margin-top: 5px;
+	line-height: 20px;
+	color: #333333;
+	width: 91.7%;
+}
+
+#main3 {
+	margin-top: 15px;
+	height: 123px;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0px 10px 2px rgba(0, 0, 0, 0.19);
+	background-color: white;
+}
+
+.titleMain3 {
+	font-family: Trebuchet MS;
+	font-weight: 600;
+	font-size: 1.1em;
+	width: 90%;
+	padding: 15px;
+	color: #333333;
+}
+
+.textMain3 {
+	font-family: Trebuchet MS;
+	font-weight: 100;
+	font-size: 0.7em;
+	color: #333333;
+	margin-left: 15px;
+	margin-right: 15px;
+	line-height: 20px;
+}
+
+#footer {
+	height: 35px;
+	background-color: silver;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0px 10px 2px rgba(0, 0, 0, 0.19);
+	margin-top: 15px;
+}
+
+.footerLeft {
+	display: inline-block;
+	float: left;
+	margin-left: 15px;
+	margin-top: 10px;
+	color: white;
+	font-family: Trebuchet MS;
+	font-size: 0.7em;
+}
+
+.footerRight {
+	display: inline-block;
+	float: right;
+	margin-right: 15px;
+	margin-top: 10px;
+	color: white;
+	font-family: Trebuchet MS;
+	font-size: 0.7em;
+}
+
+#ytLogo {
+	display: inline-block;
+	float: left;
+	/*
+	border-style: dotted;
+	border-width: 1px;
+	border-color: blue;
+	*/
+	margin-top: 16px;
+	margin-left: 13px;
+}
