@@ -1,0 +1,383 @@
+
+<?php
+
+	error_reporting(E_ALL);
+
+	$mysql = mysqli_connect("modelgenius.org.mysql", "modelgenius_org", "XdbPEYnJ", "modelgenius_org") or die ("ERROR CONNECTING INTO THE DB !!!");
+	
+	if(isset($_POST['submit'])){
+		echo "YEAH";
+	}
+?>
+
+<!doctype HTML>
+
+<html>
+
+<head>
+
+<style>
+
+body {
+	background-color: #FBFBFB;
+	margin: 0;
+}
+
+#container {
+	margin: 0 auto;
+	width: 800px;
+	/*
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: red;
+	height: 1000px;
+	*/
+}
+
+#header {
+	height: 55px;
+	/*
+	border-style: dotted;
+	border-width: 0.5px;
+	*/
+
+	display: table-cell;
+	width: 800px;
+
+}
+
+#leftHeader {
+	display: inline-block;
+	float: left;
+	/*
+	border-style: dotted;
+	border-width: 0.5px;
+	*/
+
+}
+
+#rightHeader {
+	display: inline-block;
+	float: right;
+	/*
+	border-style: dotted;
+	border-width: 0.5px;
+	*/
+}
+
+#logo {
+	margin-top: 15px;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#social {
+	padding-top: 18%;
+	padding-bottom: 5%;
+}
+
+#main1 {
+	margin-top: 10px;
+	height: 143px;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0px 10px 2px rgba(0, 0, 0, 0.2);
+	background-color: white;
+	/*
+	border-style: dotted;
+	border-width: 1px;
+	border-color: blue;
+	*/
+}
+
+.headText {
+	font-family: Trebuchet MS;
+	font-weight: 600;
+	font-size: 1.4em;
+	width: 70%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #333333;
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+	/*
+	border-style: dotted;
+	border-width: 1px;
+	border-color: blue;
+	*/
+}
+
+.headSearch {
+	display: inline-block;
+	float: left;
+	line-height: 40px;
+	padding: 0px 10px;
+	font-family: Trebuchet MS;
+	width: 548px;
+	border-color: #FF66CC;
+	border-width: 2px;
+	border-style: solid;
+	/*
+	border-style: dotted;
+	border-width: 1px;
+	border-color: blue;
+	*/
+}
+
+.headSearch:focus {
+	outline: none;
+}
+
+
+.goButton {
+	float: left;
+	-moz-box-shadow:inset 0px 1px 0px -1px #9acc85;
+	-webkit-box-shadow:inset 0px 1px 0px -1px #9acc85;
+	box-shadow:inset 0px 1px 0px -1px #9acc85;
+	background-color: #FF66CC;
+	border:0px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:13px;
+	font-weight:bold;
+	padding:14.5px 88px;
+	text-decoration:none;
+
+	/*
+	border-style: dotted;
+	border-width: 1px;
+	border-color: blue;
+	*/
+}
+
+.search {
+	padding-left: 15px;
+
+}
+
+#main2 {
+	margin-top: 15px;
+	height: 413px;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0px 10px 2px rgba(0, 0, 0, 0.19);
+	background-color: white;
+}
+
+.modelPic {
+	/*
+	border-style: dotted;
+	border-width: 1px;
+	border-color: red;
+	*/
+	margin-left: 15px;
+}
+
+.one {
+	height: 239px;
+}
+
+.two {
+	height: 239px;
+
+}
+
+.three {
+	height: 239px;
+
+}
+
+.oneClass, .twoClass {
+	/*
+	border-style: dotted;
+	border-width: 1px;
+	border-color: blue;
+	*/
+	width: 239px;
+	display: inline-block;
+	margin-right: 25px;
+	float: left;
+}
+
+.threeClass {
+	/*
+	border-style: dotted;
+	border-width: 1px;
+	border-color: blue;
+	*/
+	width: 239px;
+	display: inline-block;
+	float: left;
+
+}
+
+.titleMain2 {
+	font-family: Trebuchet MS;
+	font-weight: 600;
+	font-size: 1.1em;
+	width: 90%;
+	padding: 15px;
+	color: #333333;
+}
+
+.name {
+	background-color: rgb(240, 240, 240);
+	padding: 10px;
+	margin-top: 0;
+	font-family: Trebuchet MS;
+	font-weight: 600;
+	color: #333333;
+}
+
+.where {
+	background-color: rgb(240, 240, 240);
+	padding: 10px;
+	font-family: Trebuchet MS;
+	font-size: 0.7em;
+	margin-top: 5px;
+	line-height: 20px;
+	color: #333333;
+	width: 91.7%;
+}
+
+#main3 {
+	margin-top: 15px;
+	height: 123px;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0px 10px 2px rgba(0, 0, 0, 0.19);
+	background-color: white;
+}
+
+.titleMain3 {
+	font-family: Trebuchet MS;
+	font-weight: 600;
+	font-size: 1.1em;
+	width: 90%;
+	padding: 15px;
+	color: #333333;
+}
+
+.textMain3 {
+	font-family: Trebuchet MS;
+	font-weight: 100;
+	font-size: 0.7em;
+	color: #333333;
+	margin-left: 15px;
+	margin-right: 15px;
+	line-height: 20px;
+}
+
+#footer {
+	height: 35px;
+	background-color: silver;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0px 10px 2px rgba(0, 0, 0, 0.19);
+	margin-top: 15px;
+}
+
+.footerLeft {
+	display: inline-block;
+	float: left;
+	margin-left: 15px;
+	margin-top: 10px;
+	color: white;
+	font-family: Trebuchet MS;
+	font-size: 0.7em;
+}
+
+.footerRight {
+	display: inline-block;
+	float: right;
+	margin-right: 15px;
+	margin-top: 10px;
+	color: white;
+	font-family: Trebuchet MS;
+	font-size: 0.7em;
+}
+
+#ytLogo {
+	display: inline-block;
+	float: left;
+	/*
+	border-style: dotted;
+	border-width: 1px;
+	border-color: blue;
+	*/
+	margin-top: 16px;
+	margin-left: 13px;
+}
+</style>
+
+</head>
+
+
+
+<body>
+
+	<div id = "container">
+
+		<div id = "header">
+
+			<div id = "leftHeader">
+
+				<img src="logo.png"  id="logo" width="185.4" height="34" alt="logo">
+
+			</div> 
+
+			<div id = "rightHeader">
+
+				<img src="social.png"  id="social" width="123.75" height="34.7" alt="logo">
+
+			</div>
+
+		</div> <!-- CLOSING header !-->
+
+		<div id = "main1">
+
+			<div id = "ytLogo"> <img src="yt.png"  class="ytLogoClass" alt="logo" width="50" height="50"> </div>
+
+			<div class = "headText"> Find the names of the top-models who appear in any music video-clips on YouTube: </div>
+
+			<div class = "search"> <input size="100" type="text" class = "headSearch" placeholder="Enter YouTube address here (e.g. http://www.youtube.com/watch?v=0jMLJH866nk)"> </div>
+
+				<form action='' method='POST'>
+
+					<input type='submit' name='submit' class='goButton'/>
+
+				</form>
+
+
+		</div> <!-- CLOSING main1 !-->
+
+		<div id = "main2">
+
+			<div class = "titleMain2"> Last 3 models found with our service: </div>
+
+			<div class = "modelPic">
+
+				<div class = "oneClass"> <img src="morgan.png"  class="one" alt="logo"> <div class = "name"> Morgan Antush </div> <div class = "where"> Appears in <strong> AJ Tracey - Pasta (Official Video)</strong></div></div>
+				<div class = "twoClass"> <img src="sandra.png"  class="two" alt="logo"> <div class = "name"> Diala Rose </div> <div class = "where"> Appears in <strong> G-Eazy - Order More ft. Starrah</strong></div></div>
+				<div class = "threeClass"> <img src="trois.png"  class="three" alt="logo"> <div class = "name"> Marie Stein</div> <div class = "where"> Appears in <strong> ASAP Rocky "Purple Swag"</strong></div></div>
+
+			</div>
+
+		</div> <!-- CLOSING main2 !-->
+
+		<div id = "main3">
+
+			<div class = "titleMain3"> What is JustForScience.com ? </div>
+			<div class = "textMain3"> The website justforscience.com allows you to find the name of the models that appear on a music videoclip. No need to ask for it in the comments and wait for someone to answer! With our service, just enter the URL of the YouTube music videoclip that you're interested in, and click on 'Go'. You'll see a special page made for this exact music videoclip with the names and pictures of the models just below. Enjoy! </div>
+
+		</div> <!-- CLOSING main3 !-->
+
+		<div id = "footer">
+
+			<div class = "footerLeft"> Copyright JustForScience.com © 2017. All rights reserved. </div>
+			<div class = "footerRight"> Contact us </div>
+
+		</div> <!-- CLOSING footer !-->
+
+	</div> <!-- CLOSING container !-->
+
+</body>
+
+
+
+</html>
